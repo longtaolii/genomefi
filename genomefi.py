@@ -480,8 +480,11 @@ def main():
     asyncio.run(go(filename, isSocial))
 
 
-schedule.every().day.at("10:00").do(main)
+main()
+'''
+schedule.every().day.at("15:05").do(main)
 
 while True:
     schedule.run_pending()
     time.sleep(1)
+'''
